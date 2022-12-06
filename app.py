@@ -1,21 +1,17 @@
-import pymongo
-from pymongo import MongoClient
 
-cluster = MongoClient("client = pymongo.MongoClient("mongodb+srv://kido5327:<1b0ff61b0ff6>@cluster0.axhlqmd.mongodb.net/?retryWrites=true&w=majority")
-db = cluster["test"]
-collection = db["test"] 
+class Math:
+    #staticmethod
+    def add5(x):
+        return x + 5
 
-post1 = ("_id":5, "name":"joe")
-post2 = ("_id":6, "name":"bill")
+    #staticmethod
+    def add10(x):
+        return x + 10
 
-collection.replace_one({"_id":5}, {"name":"testing"})
-post_count = collection.count_documents({})
-print(post_count)
+    #staticmethod
+    def pr():
+        print("run")
 
-
-
-
-
-
+Math,pr()
 
 
